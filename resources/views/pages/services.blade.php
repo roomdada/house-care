@@ -41,9 +41,9 @@
            
                    </div>
             <div class="container">
-              {{$services_paginate->links()}}
+              {{ $services_paginate->links() }}
             </div>
-                </div>
+        </div>
     </div>
 </section>
 @stop

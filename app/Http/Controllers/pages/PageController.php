@@ -64,7 +64,7 @@ class PageController extends Controller
       $houses = House::orderByDesc('created_at')->paginate(6);
       $testimony = Testimony::with('user')->take(8)->orderByDesc('created_at')->get();
       $cities = City::all();
-      $data = compact('category','houses','testimony','recents','services','cities');
+      $data = compact('category','houses','testimony','recents','services','cities','services_paginate');
       return $data;;
 
    }
